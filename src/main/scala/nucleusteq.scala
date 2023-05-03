@@ -50,8 +50,8 @@ object nucleusteq extends App {
     .load
 
   val join_condition=first_file.col("order_item_order_id")===second_file.col("order_id")
-  val join_type = "inner"
-  val joinhere = first_file.join(second_file,join_condition,join_type)
+  val Join_type = "inner"
+  val joinhere = first_file.join(second_file,join_condition,Join_type)
   /* joinhere.createOrReplaceTempView("joinedtable")
   
   spark.sql("select * from joinedtable").show()*/
@@ -65,3 +65,8 @@ object nucleusteq extends App {
   //scala.io.StdIn.readLine
   spark.stop()
 }
+
+
+
+
+
